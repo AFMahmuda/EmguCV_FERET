@@ -4,11 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FERET_Login", "FERET_Login\FERET_Login.csproj", "{10771D0B-3BD9-4364-9602-84E7AEEB6C0A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A} = {A4CCE404-C995-436C-A3CE-B95C8BD5146A}
-	EndProjectSection
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FERET_Login_Database", "FERET_Login_Database\FERET_Login_Database.sqlproj", "{A4CCE404-C995-436C-A3CE-B95C8BD5146A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,16 +23,6 @@ Global
 		{10771D0B-3BD9-4364-9602-84E7AEEB6C0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10771D0B-3BD9-4364-9602-84E7AEEB6C0A}.Release|ARM.ActiveCfg = Release|Any CPU
 		{10771D0B-3BD9-4364-9602-84E7AEEB6C0A}.Release|x86.ActiveCfg = Release|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Release|ARM.ActiveCfg = Release|Any CPU
-		{A4CCE404-C995-436C-A3CE-B95C8BD5146A}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

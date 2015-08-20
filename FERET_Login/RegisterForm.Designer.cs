@@ -61,6 +61,7 @@
             this.textBoxFullName.Size = new System.Drawing.Size(225, 20);
             this.textBoxFullName.TabIndex = 3;
             this.textBoxFullName.Text = "Full Name";
+            this.textBoxFullName.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxFullName_Validating);
             // 
             // textBoxEmail
             // 
@@ -70,6 +71,7 @@
             this.textBoxEmail.Size = new System.Drawing.Size(226, 20);
             this.textBoxEmail.TabIndex = 4;
             this.textBoxEmail.Text = "Email Address";
+            this.textBoxEmail.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxEmail_Validating);
             // 
             // textBoxUsername
             // 
@@ -79,6 +81,7 @@
             this.textBoxUsername.Size = new System.Drawing.Size(225, 20);
             this.textBoxUsername.TabIndex = 7;
             this.textBoxUsername.Text = "Username";
+            this.textBoxUsername.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxUsername_Validating);
             // 
             // textBoxPassword
             // 
@@ -88,6 +91,7 @@
             this.textBoxPassword.Size = new System.Drawing.Size(225, 20);
             this.textBoxPassword.TabIndex = 8;
             this.textBoxPassword.Text = "Password";
+            this.textBoxPassword.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPassword_Validating);
             // 
             // textBoxPassword2
             // 
@@ -97,6 +101,7 @@
             this.textBoxPassword2.Size = new System.Drawing.Size(225, 20);
             this.textBoxPassword2.TabIndex = 9;
             this.textBoxPassword2.Text = "Re-type Password";
+            this.textBoxPassword2.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPassword2_Validating);
             // 
             // radioButtonGenreM
             // 
@@ -108,6 +113,7 @@
             this.radioButtonGenreM.TabStop = true;
             this.radioButtonGenreM.Text = "Male";
             this.radioButtonGenreM.UseVisualStyleBackColor = true;
+            this.radioButtonGenreM.CheckedChanged += new System.EventHandler(this.radioButtonGenreM_CheckedChanged);
             // 
             // radioButtonGenreF
             // 
@@ -119,6 +125,7 @@
             this.radioButtonGenreF.TabStop = true;
             this.radioButtonGenreF.Text = "Female";
             this.radioButtonGenreF.UseVisualStyleBackColor = true;
+            this.radioButtonGenreF.CheckedChanged += new System.EventHandler(this.radioButtonGenreF_CheckedChanged);
             // 
             // buttonRegister
             // 
@@ -128,7 +135,7 @@
             this.buttonRegister.TabIndex = 12;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = true;
-            this.buttonRegister.Click += new System.EventHandler(this.button1_Click);
+            this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
             // 
             // labelInstruction
             // 
@@ -148,6 +155,7 @@
             this.buttonCancel.TabIndex = 14;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // errorProvider
             // 

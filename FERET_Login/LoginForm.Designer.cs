@@ -70,8 +70,7 @@
             this.textBoxUsername.TabIndex = 2;
             this.textBoxUsername.Text = "Username";
             this.textBoxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
-            this.textBoxUsername.Enter += new System.EventHandler(this.textBoxUsername_Enter);
+            this.textBoxUsername.Enter += new System.EventHandler(this.textBoxUsername_Validating);
             this.textBoxUsername.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxUsername_Validate);
             // 
             // textBoxPassword
@@ -85,8 +84,7 @@
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.Text = "Password";
             this.textBoxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
-            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
+            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Validating);
             this.textBoxPassword.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPassword_Validate);
             // 
             // errorProvider

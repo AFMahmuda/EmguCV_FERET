@@ -21,30 +21,33 @@ namespace FERET_Login
             InitializeComponent();
         }
 
-        private void textBoxUsername_TextChanged(object sender, EventArgs e)
-        {
-            textBoxUsername.ForeColor = Color.Black;
-        }
 
-        private void textBoxUsername_Enter(object sender, EventArgs e)
+
+        private void textBoxUsername_Validating(object sender, EventArgs e)
         {
             textBoxUsername.CharacterCasing = CharacterCasing.Lower;
             if (textBoxUsername.ForeColor == Color.Black)
                 return;
-            else textBoxUsername.Text = "";
+            else
+            {
+                textBoxUsername.Text = "";
+                textBoxUsername.ForeColor = Color.Black;
+            }
         }
 
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-            textBoxPassword.ForeColor = Color.Black;
-        }
 
-        private void textBoxPassword_Enter(object sender, EventArgs e)
+        private void textBoxPassword_Validating(object sender, EventArgs e)
         {
             textBoxPassword.PasswordChar = '*';
             if (textBoxPassword.ForeColor == Color.Black)
                 return;
-            else textBoxPassword.Text = "";
+            else
+            {
+                textBoxPassword.Text = "";
+                textBoxPassword.ForeColor = Color.Black;
+            }
+
+
         }
 
         private void textBoxPassword_Validate(object sender, CancelEventArgs e)
