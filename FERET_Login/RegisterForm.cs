@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,74 +14,164 @@ namespace FERET_Login
 {
     public partial class RegisterForm : Form
     {
-        public LoginForm loginForm {get;set;}
-        private Authorization auth {set;get;}
+
+//        private String username = String.Empty;
+        private String username = "OWNER";
+        private String password = String.Empty;
+
+        private bool _status;
+        private bool Status
+        {
+            get
+            {
+                _status = (!username.Equals(String.Empty) && !password.Equals(String.Empty)) ? true : false;
+                return _status;
+            }
+            set
+            {
+                _status = value;
+            }
+        }
+
 
         public RegisterForm()
         {
             InitializeComponent();
+//            buttonRegister.Enabled = false;
+        }
+
+        public RegisterForm(String _username, String _password)
+        {
+            InitializeComponent();
+
             buttonRegister.Enabled = false;
+
+            textBoxUsername.ForeColor = Color.Black;
+            textBoxUsername.Text = _username;
+
+            textBoxPassword.ForeColor = Color.Black;
+            textBoxPassword.Text = _password;
         }
 
-        private void textBoxFullName_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxFullName.Text))
-                buttonRegister.Enabled = false;
-        }   
 
-        private void textBoxEmail_Validating(object sender, CancelEventArgs e)
+
+        private void textBoxUsername_Enter(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxEmail.Text))
-                buttonRegister.Enabled = false;
+            textBoxUsername.CharacterCasing = CharacterCasing.Lower;
+            if (textBoxUsername.ForeColor == Color.Black)
+                return;
+            else
+            {
+                textBoxUsername.Text = String.Empty;
+                textBoxUsername.ForeColor = Color.Black;
+            }
         }
+
+        private void textBoxPassword_Enter(object sender, EventArgs e)
+        {
+            TextBox a = sender as TextBox;
+            if (a.ForeColor == Color.Black)
+                return;
+            else
+            {
+                a.PasswordChar = '*';
+                a.Text = String.Empty;
+                a.ForeColor = Color.Black;
+            }
+
+        }
+
 
         private void textBoxUsername_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxUsername.Text))
+            if (String.IsNullOrEmpty(textBoxUsername.Text))
+            {
                 buttonRegister.Enabled = false;
+                errorProvider.SetError(textBoxUsername, "Username required!");
+                username = String.Empty;
+            }
+            else if (!Regex.IsMatch(textBoxUsername.Text, @"[a-z][a-z0-9]{4,10}"))
+            {
+                errorProvider.SetError(textBoxUsername, "Username invalid!");
+                username = String.Empty;
+            }
+
+            else
+            {
+                errorProvider.SetError(textBoxUsername, null);
+                username = textBoxUsername.Text;
+            }
+
+
         }
 
         private void textBoxPassword_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxPassword.Text))
+            if (String.IsNullOrEmpty(textBoxPassword.Text))
+            {
                 buttonRegister.Enabled = false;
+                errorProvider.SetError(textBoxPassword, "Password required!");
+                password = String.Empty;
+            }
+            else
+            {
+                errorProvider.SetError(textBoxPassword2, null);
+            }
+
         }
 
         private void textBoxPassword2_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxPassword2.Text))
+            if (!textBoxPassword2.Text.Equals(textBoxPassword.Text))
+            {
                 buttonRegister.Enabled = false;
+                errorProvider.SetError(textBoxPassword2, "password didn't match previous entry");
+                password = String.Empty;
+            }
+            else
+            {
+                errorProvider.SetError(textBoxPassword2, null);
+//                password = String.Copy(textBoxPassword2.Text);
+                password = textBoxPassword2.Text;
+            }
         }
 
-        private void radioButtonGenreF_CheckedChanged(object sender, EventArgs e)
+        private bool Register()
         {
-
-        }
-
-        private void radioButtonGenreM_CheckedChanged(object sender, EventArgs e)
-        {
-
+            return true;
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            Register();
-            loginForm.Show();
-            this.Close();
+            if (Register())
+            {
+                Thread thread = new Thread(new ThreadStart(RunTrainingForm));
+                thread.Start();
+                this.Close();
+            }
         }
 
-        private void Register()
+        private void RunTrainingForm()
         {
-            throw new NotImplementedException();
-            
+            Application.Run(new TrainingForm(username));
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            loginForm.Show();
+            Thread thread = new Thread(new ThreadStart(RunLoginForm));
+            thread.Start();
             this.Close();
         }
 
+        private void RunLoginForm()
+        {
+            Application.Run(new LoginForm());
+        }
 
+        private void CheckStatus(object sender, EventArgs e)
+        {
+            if (Status)
+                buttonRegister.Enabled = true;
+        }
     }
 }

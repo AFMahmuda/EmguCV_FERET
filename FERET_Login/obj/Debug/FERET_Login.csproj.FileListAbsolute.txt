@@ -21,3 +21,4 @@ C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\Debug\FERET_Login.
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\Debug\FERET_Login.exe
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\Debug\FERET_Login.pdb
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\Debug\FERET_Login.RegisterForm.resources
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\Debug\FERET_Login.SecurityForm.resources

@@ -22,8 +22,7 @@ namespace FERET_Login
         }
 
 
-
-        private void textBoxUsername_Validating(object sender, EventArgs e)
+        private void textBoxUsername_Enter(object sender, EventArgs e)
         {
             textBoxUsername.CharacterCasing = CharacterCasing.Lower;
             if (textBoxUsername.ForeColor == Color.Black)
@@ -36,7 +35,7 @@ namespace FERET_Login
         }
 
 
-        private void textBoxPassword_Validating(object sender, EventArgs e)
+        private void textBoxPassword_Enter(object sender, EventArgs e)
         {
             textBoxPassword.PasswordChar = '*';
             if (textBoxPassword.ForeColor == Color.Black)
@@ -50,19 +49,10 @@ namespace FERET_Login
 
         }
 
-        private void textBoxPassword_Validate(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxPassword.Text))
-                errorProvider.SetError(textBoxPassword, "Password required!");
-            else if (!Regex.IsMatch(textBoxPassword.Text, @"[A-Za-z][A-Za-z0-9]{4,10}"))
-                errorProvider.SetError(textBoxPassword, "Password invalid!");
-            else
-                errorProvider.SetError(textBoxPassword, null);
-        }
 
         private void textBoxUsername_Validate(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(textBoxUsername.Text))
+            if (String.IsNullOrEmpty(textBoxUsername.Text))
                 errorProvider.SetError(textBoxUsername, "Username required!");
             else if (!Regex.IsMatch(textBoxUsername.Text, @"[a-z][a-z0-9]{4,10}"))
                 errorProvider.SetError(textBoxUsername, "Username invalid!");
@@ -70,6 +60,17 @@ namespace FERET_Login
                 errorProvider.SetError(textBoxUsername, null);
         }
 
+        
+        private void textBoxPassword_Validate(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBoxPassword.Text))
+                errorProvider.SetError(textBoxPassword, "Password required!");
+            else
+                errorProvider.SetError(textBoxPassword, null);
+        }
+
+
+        
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             Thread thread = new Thread(new ThreadStart(RunMainForm));
@@ -77,18 +78,26 @@ namespace FERET_Login
             this.Close();
         }
 
-        private void buttonRegister_Click(object sender, EventArgs e)
-        {
-            registerForm = new RegisterForm();
-            registerForm.loginForm = this;
-            registerForm.Show();
-            this.Hide();
-        }
-
-
         private void RunMainForm()
         {
             Application.Run(new MainForm());
+        }
+
+        private void buttonRegister_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(RunRegisterForm));
+            thread.Start();
+            this.Close();
+        }
+
+        private void RunRegisterForm()
+        {
+            Application.Run(new RegisterForm());
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
