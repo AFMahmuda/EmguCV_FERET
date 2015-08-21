@@ -73,14 +73,14 @@ namespace FERET_Login
         
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(RunMainForm));
+            Thread thread = new Thread(new ThreadStart(RunSecurityForm));
             thread.Start();
             this.Close();
         }
 
-        private void RunMainForm()
+        private void RunSecurityForm()
         {
-            Application.Run(new MainForm());
+            Application.Run(new SecurityForm("OWNER"));
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)

@@ -173,5 +173,10 @@ namespace FERET_Login
             if (Status)
                 buttonRegister.Enabled = true;
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

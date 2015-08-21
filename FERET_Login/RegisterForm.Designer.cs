@@ -123,6 +123,7 @@
             this.Controls.Add(this.buttonRegister);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panAndZoomPictureBox1)).EndInit();
             this.ResumeLayout(false);

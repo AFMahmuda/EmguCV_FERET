@@ -20,3 +20,6 @@ C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Lo
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.pdb
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.MainForm.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.TrainingForm.resources
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_frontalface_default.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_eye_tree_eyeglasses.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_mcs_eyepair_big.xml
