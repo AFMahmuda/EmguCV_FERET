@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FERET_Login
 {
-    class TrainSecurityStateManager
+    class TrainingStateManager
     {
 
 

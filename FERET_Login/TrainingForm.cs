@@ -17,12 +17,6 @@ namespace FERET_Login
     public partial class TrainingForm : Form
     {
         private Capture capture;
-        private CameraCapture camera;
-        private FaceDetector faceDetector;
-        private BlinkDetector blinkDetector;
-        private FaceRecognition recognizer;
-        private BlinkStateManager blinkStateManager;
-        private TrainSecurityStateManager securityStateManager;
 
         private String status = String.Empty;
 
@@ -54,19 +48,17 @@ namespace FERET_Login
 
 
             capture = new Capture();
-            camera = new CameraCapture(capture);
+            CameraCapture.Init(capture);
+            BlinkDetector.Init(new CascadeClassifier(eyePairClassifier), new CascadeClassifier(eyeClassifier));
+            FaceDetection.Init(new CascadeClassifier(faceClassifier));
 
-            blinkStateManager = new BlinkStateManager();
-            securityStateManager = new TrainSecurityStateManager();
 
-            faceDetector = new FaceDetector(new CascadeClassifier(faceClassifier));
-            blinkDetector = new BlinkDetector(blinkStateManager, new CascadeClassifier(eyePairClassifier), new CascadeClassifier(eyeClassifier));
 
-            recognizer = new FaceRecognition(new EigenFaceRecognizer(80, double.PositiveInfinity));
+            
 
 
             labelInstruction.Text = "We will now capture a few images \nof your face";
-            camera.Start();
+            CameraCapture.Start();
 
             timer = new DispatcherTimer();
             timer.Tick += ProcessTrainFrame;
@@ -87,26 +79,26 @@ namespace FERET_Login
 
 
 
-            facePos = faceDetector.Detect(grayFrame);
+            facePos = FaceDetection.Detect(grayFrame);
 
             if (!facePos.Equals(Rectangle.Empty))
             {
-                blinkStateManager.faceDetected = true;
+                BlinkStateManager.faceDetected = true;
                 Image<Gray, byte> faceImage = grayFrame.Copy(facePos);
-                blinkDetector.Detect(faceImage);
+                BlinkDetector.Detect(faceImage);
 
-                labelActionData.Text = blinkStateManager.LastAction.ToString();
-                labelStateData.Text = blinkStateManager.State.ToString();
+                labelActionData.Text = BlinkStateManager.LastAction.ToString();
+                labelStateData.Text = BlinkStateManager.State.ToString();
                 labelStateHistory.Text = "";
-                foreach (var item in blinkStateManager.StateHistory)
+                foreach (var item in BlinkStateManager.StateHistory)
                 {
                     labelStateHistory.Text += item + "\n";
                 }
 
                 if (pauseBlinkDetectionFlag > 0) pauseBlinkDetectionFlag--;
-                if (blinkStateManager.LastAction.Equals(BlinkStateManager.LAST_ACTION.BLINK) && pauseBlinkDetectionFlag == 0)
+                if (BlinkStateManager.LastAction.Equals(BlinkStateManager.LAST_ACTION.BLINK) && pauseBlinkDetectionFlag == 0)
                 {
-                    if (recognizer.SaveTrainingData(faceImage, name))
+                    if (FaceRecognition.SaveTrainingData(faceImage, name))
                         MessageBox.Show(name + " date saved");
                     pauseBlinkDetectionFlag = 10;
                 }

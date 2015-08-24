@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace FERET_Login
 {
     public partial class LoginForm : Form
     {
 
-        private RegisterForm registerForm { set; get; }
+
         public LoginForm()
         {
             InitializeComponent();
@@ -60,7 +62,7 @@ namespace FERET_Login
                 errorProvider.SetError(textBoxUsername, null);
         }
 
-        
+
         private void textBoxPassword_Validate(object sender, CancelEventArgs e)
         {
             if (String.IsNullOrEmpty(textBoxPassword.Text))
@@ -70,17 +72,26 @@ namespace FERET_Login
         }
 
 
-        
+
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(new ThreadStart(RunSecurityForm));
-            thread.Start();
-            this.Close();
+
+            switch (Authorization.Login(textBoxUsername.Text, textBoxPassword.Text))
+            {
+                case 0:
+                    Thread thread = new Thread(new ThreadStart(RunSecurityForm));
+                    thread.Start();
+                    this.Close();
+                    break;
+                case -1:
+                    break;
+            }
+
         }
 
         private void RunSecurityForm()
         {
-            Application.Run(new SecurityForm("OWNER"));
+            Application.Run(new SecurityForm());
         }
 
         private void buttonRegister_Click(object sender, EventArgs e)
@@ -97,7 +108,10 @@ namespace FERET_Login
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            Authorization.LoadUsers();
         }
+
+
+
     }
 }

@@ -83,9 +83,9 @@
     <Compile Include="Authorization.cs" />
     <Compile Include="BlinkDetector.cs" />
     <Compile Include="CameraCapture.cs" />
-    <Compile Include="FaceDetector.cs" />
+    <Compile Include="FaceDetection.cs" />
     <Compile Include="FaceRecognition.cs" />
-    <Compile Include="TrainSecurityStateManager.cs" />
+    <Compile Include="TrainingStateManager.cs" />
     <Compile Include="BlinkStateManager.cs" />
     <Compile Include="TrainingForm.cs">
       <SubType>Form</SubType>

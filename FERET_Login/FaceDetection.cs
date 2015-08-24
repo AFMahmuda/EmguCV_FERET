@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace FERET_Login
 {
-    class FaceDetector
+    static class FaceDetection
     {
 
-        private CascadeClassifier faceClassifier;
+        private static CascadeClassifier faceClassifier;
 
-        public FaceDetector(CascadeClassifier _classifier)
+        public static void Init(CascadeClassifier _classifier)
         {
             faceClassifier = _classifier;
         }
 
 
-        public Rectangle Detect(Image<Gray, byte> source)
+        public static Rectangle Detect(Image<Gray, byte> source)
         {
             Rectangle[] result = faceClassifier.DetectMultiScale(source, 1.1, 5, new Size(100, 100), Size.Empty);
 

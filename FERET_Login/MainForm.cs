@@ -12,9 +12,11 @@ namespace FERET_Login
 {
     public partial class MainForm : Form
     {
+        private String username;
         public MainForm()
         {
             InitializeComponent();
+            username = Authorization.username;
         }
 
         private void MainForm_Load(object sender, EventArgs e)

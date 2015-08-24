@@ -15,8 +15,7 @@ namespace FERET_Login
     public partial class RegisterForm : Form
     {
 
-//        private String username = String.Empty;
-        private String username = "OWNER";
+        private String username = String.Empty;
         private String password = String.Empty;
 
         private bool _status;
@@ -37,7 +36,7 @@ namespace FERET_Login
         public RegisterForm()
         {
             InitializeComponent();
-//            buttonRegister.Enabled = false;
+            //            buttonRegister.Enabled = false;
         }
 
         public RegisterForm(String _username, String _password)
@@ -131,24 +130,28 @@ namespace FERET_Login
             else
             {
                 errorProvider.SetError(textBoxPassword2, null);
-//                password = String.Copy(textBoxPassword2.Text);
+                //                password = String.Copy(textBoxPassword2.Text);
                 password = textBoxPassword2.Text;
             }
         }
 
-        private bool Register()
-        {
-            return true;
-        }
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            if (Register())
+
+            switch (Authorization.Register(textBoxUsername.Text, textBoxPassword.Text))
             {
-                Thread thread = new Thread(new ThreadStart(RunTrainingForm));
-                thread.Start();
-                this.Close();
+                case 0:
+                    Thread thread = new Thread(new ThreadStart(RunTrainingForm));
+                    thread.Start();
+                    this.Close();
+                    break;
+                default:
+
+                    break;
             }
+
+
         }
 
         private void RunTrainingForm()

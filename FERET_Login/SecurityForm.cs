@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Threading;
@@ -17,12 +18,6 @@ namespace FERET_Login
     {
 
         private Capture capture;
-        private CameraCapture camera;
-        private FaceDetector faceDetector;
-        private BlinkDetector blinkDetector;
-        private FaceRecognition recognizer;
-        private BlinkStateManager blinkStateManager;
-        private TrainSecurityStateManager securityStateManager;
 
         private String status = String.Empty;
 
@@ -38,29 +33,25 @@ namespace FERET_Login
 
         private int pauseBlinkDetectionFlag;
 
-        public SecurityForm(String _name)
+        public SecurityForm()
         {
 
             InitializeComponent();
 
-            name = _name;
+            name = Authorization.username;
+
 
 
 
             capture = new Capture();
-            camera = new CameraCapture(capture);
+            CameraCapture.Init(capture);
+            BlinkDetector.Init(new CascadeClassifier(eyePairClassifier), new CascadeClassifier(eyeClassifier));
+            FaceDetection.Init(new CascadeClassifier(faceClassifier));
 
-            blinkStateManager = new BlinkStateManager();
-            securityStateManager = new TrainSecurityStateManager();
-
-            faceDetector = new FaceDetector(new CascadeClassifier(faceClassifier));
-            blinkDetector = new BlinkDetector(blinkStateManager, new CascadeClassifier(eyePairClassifier), new CascadeClassifier(eyeClassifier));
-
-            recognizer = new FaceRecognition(new EigenFaceRecognizer(80, double.PositiveInfinity));
 
 
             labelInstruction.Text = "We will now capture a few images \nof your face";
-            camera.Start();
+            CameraCapture.Start();
 
             timer = new DispatcherTimer();
             timer.Tick += ProcessTrainFrame;
@@ -80,45 +71,48 @@ namespace FERET_Login
 
 
 
-            facePos = faceDetector.Detect(grayFrame);
+            facePos = FaceDetection.Detect(grayFrame);
 
             if (!facePos.Equals(Rectangle.Empty))
             {
-                blinkStateManager.faceDetected = true;
+                BlinkStateManager.faceDetected = true;
                 Image<Gray, byte> faceImage = grayFrame.Copy(facePos);
-                blinkDetector.Detect(faceImage);
+                BlinkDetector.Detect(faceImage);
 
-                labelActionData.Text = blinkStateManager.LastAction.ToString();
-                labelStateData.Text = blinkStateManager.State.ToString();
+                labelActionData.Text = BlinkStateManager.LastAction.ToString();
+                labelStateData.Text = BlinkStateManager.State.ToString();
                 labelStateHistory.Text = "";
-                foreach (var item in blinkStateManager.StateHistory)
+                foreach (var item in BlinkStateManager.StateHistory)
                 {
                     labelStateHistory.Text += item + "\n";
                 }
-                String result= recognizer.Recognize(faceImage);
+                String result= FaceRecognition.Recognize(faceImage); 
                 label2.Text = result;
                 if (pauseBlinkDetectionFlag > 0) pauseBlinkDetectionFlag--;
-                if (blinkStateManager.LastAction.Equals(BlinkStateManager.LAST_ACTION.BLINK) && pauseBlinkDetectionFlag == 0)
+                if (BlinkStateManager.LastAction.Equals(BlinkStateManager.LAST_ACTION.BLINK) && pauseBlinkDetectionFlag == 0)
                 {
-                    if(name == result)
-                        MessageBox.Show(name + result);
+                    if (name.Equals(result))
+                    {
+                        Thread thread = new Thread(new ThreadStart(RunMainForm));
+                        thread.Start();
+                        this.Close();       
+                    }
                     pauseBlinkDetectionFlag = 10;
                 }
 
             }
-
-
-
             imageBox.Image = currentFrame;
         }
 
-
-
+        private void RunMainForm()
+        {
+            Application.Run(new MainForm());
+        }
 
 
         private void SecurityForm_Load(object sender, EventArgs e)
         {
-
+            FaceRecognition.Retrain();
         }
     }
 }

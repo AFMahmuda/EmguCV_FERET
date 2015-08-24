@@ -1,11 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Faces_For_Training>
   <FACE>
-    <NAME>OWNER</NAME>
-    <FILE>face_OWNER_150821132355.jpg</FILE>
+    <NAME>afmahmuda</NAME>
+    <FILE>face_afmahmuda_150823092213.jpg</FILE>
   </FACE>
   <FACE>
-    <NAME>OWNER</NAME>
-    <FILE>face_OWNER_150821132400.jpg</FILE>
+    <NAME>afmahmuda</NAME>
+    <FILE>face_afmahmuda_150823092217.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>afmahmuda</NAME>
+    <FILE>face_afmahmuda_150823092221.jpg</FILE>
   </FACE>
 </Faces_For_Training>

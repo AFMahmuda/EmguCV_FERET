@@ -6,43 +6,42 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FERET_Login
 {
-    class BlinkDetector
+    static class BlinkDetector
     {
-        Rectangle face;
-        private BlinkStateManager stateManager;
-        private CascadeClassifier eyeClassifier;
-        private CascadeClassifier eyePairClassifier;
+        static Rectangle face;
+        private static CascadeClassifier eyeClassifier;
+        private static CascadeClassifier eyePairClassifier;
 
-        public BlinkDetector(BlinkStateManager _stateManager, CascadeClassifier _eyePairClassifier, CascadeClassifier _eyeClassifier)
+        public static void Init(CascadeClassifier _eyePairClassifier, CascadeClassifier _eyeClassifier)
         {
-            stateManager = _stateManager;
-            eyeClassifier = _eyeClassifier;
             eyePairClassifier = _eyePairClassifier;
+            eyeClassifier = _eyeClassifier;
         }
 
-        public void Detect(Image<Gray, byte> _face)
+        public static void Detect(Image<Gray, byte> _face)
         {
             Rectangle eyePairPos = DetectEyePair(_face);
 
             if (!eyePairPos.Equals(Rectangle.Empty))
             {
                 Image<Gray, byte> eyePairImage = _face.Copy(eyePairPos);
-                stateManager.leftEyeDetected = DetectLeftEye(eyePairImage);
-                stateManager.rightEyeDetected = DetectRighEye(eyePairImage);
+                BlinkStateManager.leftEyeDetected = DetectLeftEye(eyePairImage);
+                BlinkStateManager.rightEyeDetected = DetectRighEye(eyePairImage);
             }
             else
             {
-                stateManager.leftEyeDetected = false;
-                stateManager.rightEyeDetected = false;
+                BlinkStateManager.leftEyeDetected = false;
+                BlinkStateManager.rightEyeDetected = false;
             }
         }
 
 
 
-        private bool DetectLeftEye(Image<Gray, byte> image)
+        private static bool DetectLeftEye(Image<Gray, byte> image)
         {
 
             image = image.Copy(new Rectangle(0, 0, image.Width / 2, image.Height));
@@ -53,7 +52,7 @@ namespace FERET_Login
                 return false;
         }
 
-        private bool DetectRighEye(Image<Gray, byte> image)
+        private static bool DetectRighEye(Image<Gray, byte> image)
         {
             image = image.Copy(new Rectangle(image.Width / 2, 0, image.Width / 2, image.Height));
             Rectangle[] result = eyeClassifier.DetectMultiScale(image, 1.1, 3, new Size(20, 20), Size.Empty);
@@ -63,9 +62,9 @@ namespace FERET_Login
                 return false;
         }
 
-        private Rectangle DetectEyePair(Image<Gray, byte> image)
+        private static Rectangle DetectEyePair(Image<Gray, byte> image)
         {
-            Rectangle[] eyePairs = eyePairClassifier.DetectMultiScale(image, 1.1, 5, new Size(70, 20), Size.Empty);
+            Rectangle[] eyePairs = eyePairClassifier.DetectMultiScale(image, 1.1, 5, new Size(70, 30), Size.Empty);
 
             if (eyePairs.Length >= 1)
             {

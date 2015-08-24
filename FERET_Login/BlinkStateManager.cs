@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace FERET_Login
 {
-    class BlinkStateManager
+    static class BlinkStateManager
     {
-        private int stateHistoryLimit = 9;
+        private static int stateHistoryLimit = 9;
 
-        public bool faceDetected;
-        public bool leftEyeDetected;
-        public bool rightEyeDetected;
+        public static bool faceDetected;
+        public static bool leftEyeDetected;
+        public static bool rightEyeDetected;
 
-        private bool _isReady;
-        public bool IsReady
+        private static bool _isReady;
+        public static bool IsReady
         {
             set { _isReady = value; }
             get
@@ -34,14 +34,14 @@ namespace FERET_Login
             }
         }
 
-        public enum STATE
+        public  enum STATE
         {
             IDLE, LOOKING_FACE, LOOKING_BOTH_EYES, LOOKING_LEFT_EYE, LOOKING_RIGHT_EYE, READY
         }
 
 
-        private STATE _state;
-        public STATE State
+        private static STATE _state;
+        public static STATE State
         {
             set
             {
@@ -69,22 +69,22 @@ namespace FERET_Login
         }
 
 
-        public List<STATE> StateHistory = new List<STATE>();
-        public void HistoryReset()
+        public static List<STATE> StateHistory = new List<STATE>();
+        public static void HistoryReset()
         {
             StateHistory.Clear();
         }
 
 
-        public enum LAST_ACTION
+        public  enum LAST_ACTION
         {
             NONE, BLINK, WINK_LEFT, WINK_RIGHT
         }
 
-        private LAST_ACTION _lastAction;
+        private static LAST_ACTION _lastAction;
 
 
-        private STATE countState(int first, int last)
+        private static STATE countState(int first, int last)
         {
             int ready, closedAll, closedLeft, closedRight, counter;
             ready = closedAll = closedLeft = closedRight = counter = 0;
@@ -123,7 +123,7 @@ namespace FERET_Login
             else return STATE.READY;
         }
 
-        public LAST_ACTION LastAction
+        public static LAST_ACTION LastAction
         {
             set
             {

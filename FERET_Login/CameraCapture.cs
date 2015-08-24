@@ -11,22 +11,22 @@ using System.Windows.Threading;
 
 namespace FERET_Login
 {
-    class CameraCapture
+    static class CameraCapture
     {
-        private Capture capture;
+        private static Capture capture;
 
-        public CameraCapture(Capture _capture)
+        public static void Init(Capture _capture)
         {
             capture = _capture;
         }
 
-        public void Start()
+        public static void Start()
         {
             capture.Start();
             capture.FlipHorizontal = true;
         }
 
-        public void Stop()
+        public static void Stop()
         {
             capture.Stop();
         }
