@@ -15,6 +15,11 @@
         {
             if (disposing && (components != null))
             {
+                capture.Dispose();
+                faceClassifier.Dispose();
+                eyeClassifier.Dispose();
+                eyePairClassifier.Dispose();
+
                 components.Dispose();
             }
             base.Dispose(disposing);

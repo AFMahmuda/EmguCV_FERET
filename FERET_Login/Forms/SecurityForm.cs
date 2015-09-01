@@ -116,10 +116,10 @@ namespace FERET_Login
                     BlinkStateManager.Clear();
                     break;
                 case SecurityStateManager.STATE.NOT_MATCH:
-                    MessageBox.Show("Face doesn't match : " + username);
-                    Thread thread = new Thread(new ThreadStart(RunLoginForm));
-                    thread.Start();
-                    this.Close();
+//                    MessageBox.Show("Face doesn't match : " + username);
+                    //Thread thread = new Thread(new ThreadStart(RunLoginForm));
+                    //thread.Start();
+                    //this.Close();
                     break;
                 case SecurityStateManager.STATE.READY:
                     if (BlinkStateManager.IsReady)

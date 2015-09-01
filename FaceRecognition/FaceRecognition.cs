@@ -26,9 +26,9 @@ namespace FaceRecognitionProject
         private static float EigenDistance = 0;
         private static int EigenThreshold = 2000, countTrain = 0;
 
-        public static void Init(string TrainingFolder)
+        public static void Init(string trainingFolder)
         {
-            IsTrained = LoadTrainingData(TrainingFolder);
+            IsTrained = LoadTrainingData(trainingFolder);
         }
 
         public static bool Retrain()
@@ -49,7 +49,6 @@ namespace FaceRecognitionProject
                 long fileLength = filestream.Length;
                 byte[] xmlBytes = new byte[fileLength];
                 filestream.Read(xmlBytes, 0, (int)fileLength);
-                filestream.Close();
                 filestream.Dispose();
 
                 MemoryStream xmlStream = new MemoryStream(xmlBytes);

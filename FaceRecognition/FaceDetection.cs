@@ -21,6 +21,7 @@ namespace FaceRecognitionProject
 
         public static void Detect(Image<Gray, Byte> sourceImage, List<Rectangle> faces)
         {
+            
             //normalize image
             sourceImage._EqualizeHist();
 

@@ -1,3 +1,6 @@
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_eye_tree_eyeglasses.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_frontalface_default.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_mcs_eyepair_big.xml
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\FERET_Login.exe.config
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\FERET_Login.exe
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\FERET_Login.pdb
@@ -10,16 +13,13 @@ C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Emgu.CV.
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Emgu.CV.GPU.xml
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Emgu.CV.UI.xml
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Emgu.Util.xml
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.TrainingForm.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.LoginForm.resources
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.MainForm.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.Properties.Resources.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.RegisterForm.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.SecurityForm.resources
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.csproj.GenerateResource.Cache
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.exe
 C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.pdb
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.MainForm.resources
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.TrainingForm.resources
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_frontalface_default.xml
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_eye_tree_eyeglasses.xml
-C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\bin\x64\Debug\Classifier\haarcascade_mcs_eyepair_big.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FERET_Login\FERET_Login\obj\x64\Debug\FERET_Login.csprojResolveAssemblyReference.cache

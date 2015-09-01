@@ -1,11 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<User_Database>
-  <USER>
-    <USERNAME>novan</USERNAME>
-    <PASSWORD>12345</PASSWORD>
-  </USER>
-  <USER>
-    <USERNAME>afmahmuda</USERNAME>
-    <PASSWORD>2112112</PASSWORD>
-  </USER>
-</User_Database>
+﻿<?xml version="1.0" encoding="utf-8"?><User_Database><USER><USERNAME>afmahmuda</USERNAME><PASSWORD>2112112</PASSWORD></USER></User_Database>

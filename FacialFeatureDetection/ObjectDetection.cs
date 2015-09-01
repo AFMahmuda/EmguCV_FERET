@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace FaceRecognitionProject
 {
-    public class ObjectDetector
+    public class ObjectDetector: IDisposable
     {
         private CascadeClassifier Classifier;
 
@@ -35,6 +35,11 @@ namespace FaceRecognitionProject
             
             //add detected face(s) to the list
             objects.AddRange(detectedObjects);
+        }
+
+        public void Dispose()
+        {
+            Classifier.Dispose();
         }
     }
 }

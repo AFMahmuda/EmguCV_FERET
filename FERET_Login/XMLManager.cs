@@ -86,7 +86,6 @@ namespace FERET_Login
                 long fileLength = filestream.Length;
                 byte[] xmlBytes = new byte[fileLength];
                 filestream.Read(xmlBytes, 0, (int)fileLength);
-                filestream.Close();
                 filestream.Dispose();
 
                 MemoryStream xmlStream = new MemoryStream(xmlBytes);
@@ -133,7 +132,6 @@ namespace FERET_Login
                 long fileLength = filestream.Length;
                 byte[] xmlBytes = new byte[fileLength];
                 filestream.Read(xmlBytes, 0, (int)fileLength);
-                filestream.Close();
                 filestream.Dispose();
 
                 MemoryStream xmlStream = new MemoryStream(xmlBytes);

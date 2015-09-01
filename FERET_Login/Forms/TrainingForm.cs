@@ -80,7 +80,6 @@ namespace FERET_Login
             {
                 BlinkStateManager.faceDetected = true;
                 Image<Gray, byte> faceImage = grayFrame.Copy(facePos);
-                BlinkDetector.Detect(faceImage);
 
                 CheckBlink(faceImage);
             }
@@ -92,7 +91,7 @@ namespace FERET_Login
         {
             //print method for debugging purpose
             PrintBlinkInformations();
-
+            BlinkDetector.Detect(faceImage);
             if (BlinkStateManager.LastAction.Equals(BlinkStateManager.LAST_ACTION.BLINK))
             {
                 if (FaceRecognition.SaveTrainingData(faceImage, name))

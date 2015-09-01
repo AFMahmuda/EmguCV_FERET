@@ -25,7 +25,7 @@ namespace FERET_Login
 
         //due to bug in openCV, second parameter of EigenFacerecognizer need to be double.PositiveInfinity
         //so we need to put threshold on a different var. 80 and 2000 are recommended values
-        private static FaceRecognizer faceRecognizer = new EigenFaceRecognizer(80, double.PositiveInfinity);
+        private static FaceRecognizer faceRecognizer = new EigenFaceRecognizer(150, double.PositiveInfinity);
         private static int EigenThreshold = 2000;
 
         //face recognizer label is an integer so we need another list name to get labels (name)
@@ -91,11 +91,11 @@ namespace FERET_Login
         public static String Recognize(Image<Gray, byte> source, int threshold = -1)
         {
             //if threshold parameter is set ( not default [-1] ), we use parameter value as threshold
-            //else, use EigenThreshold's value as thrshold (2000)
+            //else, use EigenThreshold's value as threshold (2000)
             if (threshold > -1) EigenThreshold = threshold;
 
             //normalize and resize image
-            Image<Gray, byte> face = source.Resize(width, height, Emgu.CV.CvEnum.INTER.CV_INTER_LINEAR, false);
+            Image<Gray, byte> face = source.Resize(width, height, Emgu.CV.CvEnum.INTER.CV_INTER_CUBIC, false);
             face._EqualizeHist();
 
             try
@@ -103,7 +103,7 @@ namespace FERET_Login
                 String eigenLabel = "";
                 FaceRecognizer.PredictionResult result = faceRecognizer.Predict(face);
                 if (result.Label == -1)
-                    return "Unknown";
+                    return "Unknown -1";
 
                 else
                 {
@@ -112,9 +112,9 @@ namespace FERET_Login
                     eigenLabel = labels[result.Label];
                     eigenDistance = (float)result.Distance;
                     if (eigenDistance > EigenThreshold) 
-                        return eigenLabel;
+                        return eigenLabel + eigenDistance;
                     else 
-                        return "Unknown";
+                        return "Unknown " + eigenDistance;
                 }
             }
             catch (Exception e)
@@ -122,7 +122,7 @@ namespace FERET_Login
                 MessageBox.Show(e.Message);
             }
 
-            return "Unknown";
+            return "Unknown -2";
         }
     }
 }

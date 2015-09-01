@@ -45,8 +45,6 @@ namespace FERET_Login
             }
         }
 
-
-
         //because this method only invoked if pair of eyes,
         //this method will check wether left eye opened or not (state of individual eye).
         private static bool DetectLeftEye(Image<Gray, byte> image)

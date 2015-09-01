@@ -10,6 +10,7 @@ namespace FERET_Login
     {
         private static int stateHistoryLimit = 9;
 
+
         public static bool faceDetected;
         public static bool leftEyeDetected;
         public static bool rightEyeDetected;
@@ -38,7 +39,6 @@ namespace FERET_Login
         {
             IDLE, LOOKING_FACE, LOOKING_BOTH_EYES, LOOKING_LEFT_EYE, LOOKING_RIGHT_EYE, READY
         }
-
 
         private static STATE _state;
         public static STATE State
@@ -140,6 +140,7 @@ namespace FERET_Login
                 secondState = countState(stateHistoryLimit / 3, stateHistoryLimit * 2 / 3 - 1);
                 thirdState = countState(stateHistoryLimit * 2 / 3, stateHistoryLimit - 1);
 
+
                 if (firstState.Equals(STATE.READY) && thirdState.Equals(STATE.READY))
                 {
                     switch (secondState)
@@ -164,7 +165,5 @@ namespace FERET_Login
                 return _lastAction;
             }
         }
-
-
     }
 }
