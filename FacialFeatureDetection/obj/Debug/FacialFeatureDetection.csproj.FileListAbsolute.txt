@@ -1,0 +1,13 @@
+C:\Users\coxizu\Desktop\KP\bin\FacialFeatureDetection.exe.config
+C:\Users\coxizu\Desktop\KP\bin\Program.cs
+C:\Users\coxizu\Desktop\KP\bin\FacialFeatureDetection.exe.manifest
+C:\Users\coxizu\Desktop\KP\bin\FacialFeatureDetection.application
+C:\Users\coxizu\Desktop\KP\bin\FacialFeatureDetection.exe
+C:\Users\coxizu\Desktop\KP\bin\FacialFeatureDetection.pdb
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FaceRecognitionProject.MainForm.resources
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.csproj.GenerateResource.Cache
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.exe.manifest
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.application
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.exe
+C:\Users\coxizu\Desktop\KP\FacialFeatureDetection\FacialFeatureDetection\obj\Debug\FacialFeatureDetection.pdb

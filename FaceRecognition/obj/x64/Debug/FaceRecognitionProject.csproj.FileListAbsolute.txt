@@ -1,0 +1,122 @@
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Program.cs
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe.config
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe.manifest
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.application
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.Cuda.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.UI.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.Util.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\ZedGraph.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.xml
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.Cuda.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.Cuda.xml
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.UI.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.UI.xml
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.Util.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.Util.xml
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\ZedGraph.xml
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\zh-CN\Emgu.CV.UI.resources.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\bin\x64\Debug\zh-CN\ZedGraph.resources.dll
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.MainForm.resources
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.exe.manifest
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.application
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.exe
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Program.cs
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\FaceRecognition.exe.config
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\FaceRecognition.exe.manifest
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\FaceRecognition.application
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\FaceRecognition.exe
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\FaceRecognition.pdb
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2013.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.GPU.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.UI.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.Util.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\ZedGraph.dll
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.xml
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.GPU.xml
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.CV.UI.xml
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\bin\x64\Debug\Emgu.Util.xml
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognitionProject.MainForm.resources
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognition.exe.manifest
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognition.application
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognition.exe
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognition.pdb
+D:\Dokumen\code\c#\FaceRecognition 2.4.10\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe.config
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Program.cs
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2013.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.GPU.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.Util.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\ZedGraph.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.GPU.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\bin\x64\Debug\Emgu.Util.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.MainForm.resources
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\FaceRecognition\CameraCapture\obj\x64\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe.config
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Program.cs
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2013.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.GPU.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.Util.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\ZedGraph.dll
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.GPU.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.Util.xml
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.MainForm.resources
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe.config
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Program.cs
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2013.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.GPU.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.Util.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\ZedGraph.dll
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.GPU.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\Emgu.Util.xml
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.MainForm.resources
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\obj\x64\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\EmguCV_FaceRecognition\FaceRecognition\bin\x64\Debug\haarcascade_frontalface_default.xml
