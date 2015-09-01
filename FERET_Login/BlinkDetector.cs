@@ -24,7 +24,7 @@ namespace FERET_Login
 
         }
 
-        public static void Detect(Image<Gray, byte> face)
+        public static void Detect(Image<Gray, byte> face) 
         {
             //normalize
             face._EqualizeHist();
