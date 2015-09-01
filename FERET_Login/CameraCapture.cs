@@ -11,7 +11,7 @@ using System.Windows.Threading;
 
 namespace FERET_Login
 {
-    static class CameraCapture
+    class CameraCapture
     {
         private static Capture capture;
 
@@ -23,16 +23,15 @@ namespace FERET_Login
         public static void Start()
         {
             capture.Start();
+
+            //give mirror effect
             capture.FlipHorizontal = true;
         }
 
         public static void Stop()
         {
             capture.Stop();
+            capture.Dispose();
         }
-
-
-
-
     }
 }

@@ -2,14 +2,34 @@
 <Faces_For_Training>
   <FACE>
     <NAME>afmahmuda</NAME>
-    <FILE>face_afmahmuda_150823092213.jpg</FILE>
+    <FILE>face_afmahmuda_150826142444.jpg</FILE>
   </FACE>
   <FACE>
     <NAME>afmahmuda</NAME>
-    <FILE>face_afmahmuda_150823092217.jpg</FILE>
+    <FILE>face_afmahmuda_150826142446.jpg</FILE>
   </FACE>
   <FACE>
     <NAME>afmahmuda</NAME>
-    <FILE>face_afmahmuda_150823092221.jpg</FILE>
+    <FILE>face_afmahmuda_150826142450.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>novan</NAME>
+    <FILE>face_novan_150828163440.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>novan</NAME>
+    <FILE>face_novan_150828163450.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>novan</NAME>
+    <FILE>face_novan_150828163500.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>novan</NAME>
+    <FILE>face_novan_150828163503.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>novan</NAME>
+    <FILE>face_novan_150828163509.jpg</FILE>
   </FACE>
 </Faces_For_Training>

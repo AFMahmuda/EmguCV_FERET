@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FERET_Login
 {
-    static class BlinkStateManager
+    class BlinkStateManager
     {
         private static int stateHistoryLimit = 9;
 
@@ -70,7 +70,7 @@ namespace FERET_Login
 
 
         public static List<STATE> StateHistory = new List<STATE>();
-        public static void HistoryReset()
+        public static void Clear()
         {
             StateHistory.Clear();
         }
@@ -145,7 +145,8 @@ namespace FERET_Login
                     switch (secondState)
                     {
                         case STATE.LOOKING_BOTH_EYES:
-                            _lastAction = LAST_ACTION.BLINK;
+                            if (_lastAction.Equals(LAST_ACTION.NONE))
+                                _lastAction = LAST_ACTION.BLINK;
                             break;
                         case STATE.LOOKING_LEFT_EYE:
                             _lastAction = LAST_ACTION.WINK_LEFT;
@@ -163,9 +164,6 @@ namespace FERET_Login
                 return _lastAction;
             }
         }
-
-
-
 
 
     }

@@ -17,7 +17,6 @@ namespace FERET_Login
     public partial class LoginForm : Form
     {
 
-
         public LoginForm()
         {
             InitializeComponent();

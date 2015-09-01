@@ -102,7 +102,7 @@
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonRegister);
             this.Name = "LoginForm";
-            this.Text = "Feret LOL";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);

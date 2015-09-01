@@ -36,7 +36,6 @@ namespace FERET_Login
         public RegisterForm()
         {
             InitializeComponent();
-            //            buttonRegister.Enabled = false;
         }
 
         public RegisterForm(String _username, String _password)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FERET_Login
 {
-    static class FaceDetection
+    class FaceDetection
     {
 
         private static CascadeClassifier faceClassifier;
@@ -21,16 +21,18 @@ namespace FERET_Login
 
 
         public static Rectangle Detect(Image<Gray, byte> source)
-        {
-            Rectangle[] result = faceClassifier.DetectMultiScale(source, 1.1, 5, new Size(100, 100), Size.Empty);
+        {            
+            //we put 75,75 (smaller than needed) so we can warn user if their face is to far.
+            Rectangle[] result = faceClassifier.DetectMultiScale(source, 1.1, 5, new Size(75, 75), Size.Empty);
 
-
-
+            //only process if exacly ONE face is detected
             if (result.Length == 1)
             {
                 Rectangle temp = result.First();
-                int heightInflate = 5, yOffset = -20;
 
+                //we need to inflate and shift (up) image so hair, chin, and ears features not missed
+                //before inflating and shifting, we need to check if altering the rectangle is actualy possible
+                int heightInflate = 5, yOffset = -20;
                 if (
                     temp.Top - (temp.Height / heightInflate) + (temp.Height / yOffset) > 0
                     &&
@@ -41,14 +43,11 @@ namespace FERET_Login
                     return temp;
                 }
                 else return Rectangle.Empty;
-
             }
 
             else
                 return Rectangle.Empty;
         }
-
-
 
     }
 }

@@ -13,7 +13,15 @@ namespace FERET_Login
     static class Authorization
     {
 
+        //xml file's properties
+        private static String folder = "User";
+        private static String file = "Users.xml";
+        private static String folderpath { get { return Application.StartupPath + "\\" + folder; } }
+        private static String filepath { get { return folderpath + "\\" + file; } }
+
         private static Dictionary<String, String> Users = new Dictionary<string, string>();
+
+        //current logged in user
         public static String username;
 
         public static int Login(String username, String password)
@@ -25,148 +33,60 @@ namespace FERET_Login
                     Authorization.username = username;
                     return 0;
                 }
-                
-                else
-                    return -1;
             }
-            else
-                return -1;
+
+            return -1;
         }
 
         public static int Register(String username, String password)
         {
-            if (username.Equals("Username") && password.Equals("Password"))
+
+            if (username.Equals("Username") && password.Equals("Password")) 
+                //do nothing on default value                
                 return -1;
-            if (!Users.ContainsKey(username))
+            else if (!Users.ContainsKey(username))
             {
-                SaveUsers(username, password);
+                SaveUser(username, password);
                 return 0;
             }
-            else
-                return -1;
+            return -1;
         }
 
-        private static void WriteXML(String name, String filename)
+
+
+        public static void SaveUser(String username, String password)
         {
-            if (!Directory.Exists(Application.StartupPath + "\\User\\"))
-                Directory.CreateDirectory(Application.StartupPath + "\\User\\");
-
-            XmlDocument xmlFile = new XmlDocument();
-            if (File.Exists(Application.StartupPath + "\\User\\Users.xml"))
-            {
-
-                bool loading = true;
-                while (loading)
-                {
-                    try
-                    {
-                        xmlFile.Load(Application.StartupPath + "\\User\\Users.xml");
-                        loading = false;
-                    }
-                    catch
-                    {
-                        xmlFile = null;
-                        xmlFile = new XmlDocument();
-                        Thread.Sleep(10);
-                    }
-                }
-
-                XmlElement root = xmlFile.DocumentElement;
-
-                XmlElement face_D = xmlFile.CreateElement("USER");
-                XmlElement name_D = xmlFile.CreateElement("USERNAME");
-                XmlElement file_D = xmlFile.CreateElement("PASSWORD");
-
-
-                name_D.InnerText = name;
-                file_D.InnerText = filename;
-
-                face_D.AppendChild(name_D);
-                face_D.AppendChild(file_D);
-                root.AppendChild(face_D);
-
-                xmlFile.Save(Application.StartupPath + "\\User\\Users.xml");
-            }
-
-            else
-            {
-                FileStream fileStream = File.OpenWrite(Application.StartupPath + "\\User\\Users.xml");
-                using (XmlWriter xmlWriter = XmlWriter.Create(fileStream))
-                {
-                    xmlWriter.WriteStartDocument();
-                    xmlWriter.WriteStartElement("User_Database");
-
-                    xmlWriter.WriteStartElement("USER");
-                    xmlWriter.WriteElementString("USERNAME", name);
-                    xmlWriter.WriteElementString("PASSWORD", filename);
-                    xmlWriter.WriteEndElement();
-
-                    xmlWriter.WriteEndElement();
-                    xmlWriter.WriteEndDocument();
-                }
-                fileStream.Dispose();
-
-            }
-
-        }
-
-        public static void SaveUsers(String username, String password)
-        {
+            //add to current dictionary
             Users.Add(username, password);
-            WriteXML(username, password);
+
+            //write to file
+            XMLManager.WriteXMLForAuth(folderpath, file, username, password);
         }
 
 
         public static void LoadUsers()
         {
+
+            //read from file
             List<String> usernames = new List<String>();
             List<String> passwords = new List<String>();
+            XMLManager.ReadXMLForAuth(filepath, usernames, passwords);
 
-            ReadXML(usernames, passwords);
 
+            //add to current dictionary
+            Users.Clear();
             int counter = 0;
             foreach (String user in usernames)
                 Users.Add(user, passwords[counter++]);
         }
 
-        private static void ReadXML(List<String> usernames, List<String> passwords)
+
+        public static bool Logout()
         {
-
-            if (File.Exists(Application.StartupPath + "\\User\\Users.xml"))
-            {
-                FileStream filestream = File.OpenRead(Application.StartupPath + "\\User\\Users.xml");
-                long fileLength = filestream.Length;
-                byte[] xmlBytes = new byte[fileLength];
-                filestream.Read(xmlBytes, 0, (int)fileLength);
-                filestream.Close();
-                filestream.Dispose();
-
-                MemoryStream xmlStream = new MemoryStream(xmlBytes);
-                using (XmlReader xmlReader = XmlTextReader.Create(xmlStream))
-                {
-                    while (xmlReader.Read())
-                    {
-                        if (xmlReader.IsStartElement())
-                        {
-                            switch (xmlReader.Name)
-                            {
-                                case "USERNAME":
-                                    if (xmlReader.Read())
-                                        usernames.Add(xmlReader.Value.Trim());
-                                    break;
-                                case "PASSWORD":
-                                    if (xmlReader.Read())
-
-                                        passwords.Add(xmlReader.Value.Trim());
-                                    break;
-                            }
-                        }
-                    }
-                }
-                xmlStream.Dispose();
-                filestream.Dispose();
-            }
+            username = "";
+            return true;
         }
+
 
     }
 }
