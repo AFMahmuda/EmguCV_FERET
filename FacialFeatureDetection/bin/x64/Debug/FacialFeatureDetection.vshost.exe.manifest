@@ -107,14 +107,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FacialFeatureDetection.exe" size="8704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FacialFeatureDetection.exe" size="9216">
       <assemblyIdentity name="FacialFeatureDetection" version="0.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ax52rHvloIhPcuQqwiVnZ8E88Uwini4WSsHc5gcBARA=</dsig:DigestValue>
+        <dsig:DigestValue>ImRpg/6kMvDb1bbZGkvR09mPzwQhocF3DYtWKXJNjG0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -130,175 +130,175 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Classifiers\haarcascade_eye.xml" size="341406" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_eye.xml" size="353619" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ccxk/DBaNV3GAGeID2+71D3RVb1j7jhEZhob2jSy/Yw=</dsig:DigestValue>
+      <dsig:DigestValue>ERVJmIrBLgFW7ErjFdOoyxjjfBgsMXTYRbz+TmyIoLM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_eye_tree_eyeglasses.xml" size="601661" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_eye_tree_eyeglasses.xml" size="624280" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4y+cZ5NcM+nRMx6xT6WFVP8Xg1wDdCZjvLl6iS6Talc=</dsig:DigestValue>
+      <dsig:DigestValue>OD031ihR0gw67kbFgyPzNNY4NB1eNCOpP5oH+MkKx6g=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_frontalface_alt.xml" size="676709" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_frontalface_alt.xml" size="701059" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YoHfE0Wcwhj/BH0Csq44WbEv8UqT/+iVL3sz+te5aXs=</dsig:DigestValue>
+      <dsig:DigestValue>aTZv7cMN6MvUAzZMdDAcE5DtwNxflysGaGosAJVI3Rs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_frontalface_alt_tree.xml" size="2689040" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_frontalface_alt_tree.xml" size="2785524" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Dl7kfswTJp1U3XpV+LU3UhZ8Ulh3IId3MjiPsHigSAo=</dsig:DigestValue>
+      <dsig:DigestValue>wjx1aWRo9yQGCSKJVru0YIxshcxYUKdr85FEs5Ra6kE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_frontalface_alt2.xml" size="540616" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_frontalface_alt2.xml" size="561335" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ewyWfZq7373gJeuceGlH0VG2QmBA0HqPlWLtj9kHJLQ=</dsig:DigestValue>
+      <dsig:DigestValue>hBInbs2W/hwSSGswLJynR+yHM5i7oabEBoSOdgUYQaY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_frontalface_default.xml" size="930127" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_frontalface_default.xml" size="963441" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>D31FJ4ROtRTUpJSOgi2pD7sWo0oLu7xq3GSYdHpar7A=</dsig:DigestValue>
+      <dsig:DigestValue>pxyD6dD/1ToA/bPx/ZGQUUnY0AHhB26rwy8u25RfjvM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_lefteye_2splits.xml" size="195369" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_lefteye_2splits.xml" size="202759" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dMMjx4yBR1/JFY+sv7hmuwzKBr5B9XHfR9SsjQH5zkw=</dsig:DigestValue>
+      <dsig:DigestValue>BMZTMiKHPC+p11zKNLaH5dtZhc6uYWkA8TVbTDL6pOo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_eyepair_big.xml" size="358385" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_eyepair_big.xml" size="369315" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Cfu1WAqkJsRbN2WK3RSFUUwYktSI4Tl8cUPlTcxQvfQ=</dsig:DigestValue>
+      <dsig:DigestValue>CV2pbzrMy7CBMzOTNHyxh8GuL/ARtPHbNps1nLlTq5s=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_eyepair_small.xml" size="410204" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_eyepair_small.xml" size="422790" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>A+Sgb9MxgiiIDzwf11vV/IU0L56t4dnwkU2pkB0OJhQ=</dsig:DigestValue>
+      <dsig:DigestValue>DXqxfP3lsLaHbvDLuGKWdo+zXb69G4lrsBZpGyMiDZ0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_leftear.xml" size="312877" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_leftear.xml" size="322199" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XLpGYqYressr7Dzuri99GXpJLTrTTMsuzxJRnj6O5t8=</dsig:DigestValue>
+      <dsig:DigestValue>BYoBf8n/l0daM5AHsqbn1U3dQTUP+IsskKYYaGQJwJI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_lefteye.xml" size="777721" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_lefteye.xml" size="801512" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uAtefYGfojuxoOp+6uVOc2LCv4vvozwsX87InoTs9Lo=</dsig:DigestValue>
+      <dsig:DigestValue>jK9DhzeUAFb12h47lPiPYLk6f/5U2Q4SCmBo3GsCcnM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_mouth.xml" size="719806" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_mouth.xml" size="741797" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>J9WmRNZUI1Hip53Zn/SdNTl3MJLK5VGj+9nelCKcK+c=</dsig:DigestValue>
+      <dsig:DigestValue>oE/M923u45HwfSsIfZFe8B6U2wjGJmpA/BMIFcpIqLE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_nose.xml" size="1585210" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_nose.xml" size="1633643" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>L/ZGg70vSVR+ZOAGNhB0R0btFACCx6j39m/cu2ZHE7w=</dsig:DigestValue>
+      <dsig:DigestValue>X3DcAu/A+SsV6nPkiefYcwXICRudboztK32K3HQmRcY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_rightear.xml" size="324727" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_rightear.xml" size="334398" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>891nLvmrHIHPcbSd+a+JQy8W+Hli0BqOMPUiL/1vy6M=</dsig:DigestValue>
+      <dsig:DigestValue>oEFGt1FG185hTD9+c3A/vLsRJcTmJyGyVeeDEgTnvY0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_righteye.xml" size="1383113" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_righteye.xml" size="1425365" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QDnmOaTv0IYqJbRf/gzt4+IatO3tiz+BXONSv0dbLKc=</dsig:DigestValue>
+      <dsig:DigestValue>v18g+CJAPppGlfcgBGf2yTAHfNSQOmLM4FU/5IzxaUM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_mcs_upperbody.xml" size="1522737" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_mcs_upperbody.xml" size="1569064" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eyFMXVOBqe0EcnBCILQEfeJ3EWxFrwx/xvbr815KDBM=</dsig:DigestValue>
+      <dsig:DigestValue>I2i2CeUNPuOXN1uYlcF5na7VQWoKbUTRCdjdNAFPItY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_profileface.xml" size="828514" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_profileface.xml" size="858204" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>s5pKO+RVOdsUan/B0+dhopLBluuIQhGF5qYVswVeYS0=</dsig:DigestValue>
+      <dsig:DigestValue>AI/lziZkxpHBzOc2l1iNXc+fdE09P2Pdyd6Vc8u3KUM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_righteye_2splits.xml" size="196170" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_righteye_2splits.xml" size="203577" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>TPDXK+pzB+mvfrmdSsvhXXEBpnwi/Nz77v1pKtN893Y=</dsig:DigestValue>
+      <dsig:DigestValue>fbLN4qP6tSAOl1LQPh3OH186SJYBBqiKTUP7QQkliAE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Classifiers\haarcascade_smile.xml" size="188650" writeableType="applicationData">
+  <file name="Classifiers\haarcascade_smile.xml" size="195379" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YRADHRdAO85xUdc3zcgvvV65JT7O1MQJceRhRODX7ns=</dsig:DigestValue>
+      <dsig:DigestValue>5il5vQqLSny6KUNMT9eLuJiM5LBOoq0LTkHfMH8bm34=</dsig:DigestValue>
     </hash>
   </file>
   <file name="FacialFeatureDetection.exe.config" size="163">

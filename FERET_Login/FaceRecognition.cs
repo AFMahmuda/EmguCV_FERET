@@ -112,7 +112,7 @@ namespace FERET_Login
                     eigenLabel = labels[result.Label];
                     eigenDistance = (float)result.Distance;
                     if (eigenDistance > EigenThreshold) 
-                        return eigenLabel + eigenDistance;
+                        return eigenLabel;
                     else 
                         return "Unknown " + eigenDistance;
                 }

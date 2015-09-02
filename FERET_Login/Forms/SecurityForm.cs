@@ -1,14 +1,8 @@
 ﻿using Emgu.CV;
 using Emgu.CV.Structure;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Threading;
 
@@ -53,7 +47,7 @@ namespace FERET_Login
 
             timer = new DispatcherTimer();
             timer.Tick += ProcessSecurityFrame;
-            timer.Interval = new TimeSpan(0, 0, 0, 0, 50);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 1);
             timer.Start();
 
         }
@@ -80,7 +74,6 @@ namespace FERET_Login
                 SecurityStateManager.AddToHistory(username.Equals(detected));
 
                 checkBlink(faceImage);
-
             }
 
             imageBox.Image = currentFrame;
@@ -116,10 +109,10 @@ namespace FERET_Login
                     BlinkStateManager.Clear();
                     break;
                 case SecurityStateManager.STATE.NOT_MATCH:
-//                    MessageBox.Show("Face doesn't match : " + username);
-                    //Thread thread = new Thread(new ThreadStart(RunLoginForm));
-                    //thread.Start();
-                    //this.Close();
+                    MessageBox.Show("Face doesn't match!");
+                    Thread thread = new Thread(new ThreadStart(RunLoginForm));
+                    thread.Start();
+                    this.Close();
                     break;
                 case SecurityStateManager.STATE.READY:
                     if (BlinkStateManager.IsReady)

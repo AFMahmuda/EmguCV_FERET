@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FERET_Login", "FERET_Login\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlinkDetection", "BlinkDetection\BlinkDetection.csproj", "{9C53DDF1-FFB7-42A0-87C1-9CBDFFE768A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognitionProject", "FaceRecognition\FaceRecognitionProject.csproj", "{5F6B97F8-7EA6-4B5D-9A5D-F5581505C303}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognition", "FaceRecognition\FaceRecognition.csproj", "{5F6B97F8-7EA6-4B5D-9A5D-F5581505C303}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacialFeatureDetection", "FacialFeatureDetection\FacialFeatureDetection.csproj", "{70094A41-9B22-4364-8D74-AA5FAB2AEF52}"
 EndProject
