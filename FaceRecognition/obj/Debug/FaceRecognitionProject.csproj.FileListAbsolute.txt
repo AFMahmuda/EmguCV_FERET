@@ -1,0 +1,13 @@
+C:\Users\coxizu\Desktop\KP\bin\FaceRecognition.exe.config
+C:\Users\coxizu\Desktop\KP\bin\Program.cs
+C:\Users\coxizu\Desktop\KP\bin\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\bin\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\bin\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\bin\FaceRecognition.pdb
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognitionProject.csprojResolveAssemblyReference.cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognitionProject.MainForm.resources
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognitionProject.csproj.GenerateResource.Cache
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognition.exe.manifest
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognition.application
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognition.exe
+C:\Users\coxizu\Desktop\KP\FaceRecognition\FaceRecognition\obj\Debug\FaceRecognition.pdb

@@ -1,0 +1,24 @@
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Emgu.CV.License.txt
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.CameraCapture.exe
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.CameraCapture.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\CameraCapture.csprojResolveAssemblyReference.cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\CameraCapture.CameraCapture.resources
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\CameraCapture.csproj.GenerateResource.Cache
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\Example.CameraCapture.exe
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\Example.CameraCapture.pdb
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.CameraCapture.exe.manifest
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\bin\Example.CameraCapture.application
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\Example.CameraCapture.exe.manifest
+C:\Emgu\emgucv-windows-universal 3.0.0.2157\Emgu.CV.Example\CameraCapture\obj\Debug\Example.CameraCapture.application
+D:\Dokumen\code\c#\bin\Example.CameraCapture.exe.manifest
+D:\Dokumen\code\c#\bin\Example.CameraCapture.application
+D:\Dokumen\code\c#\bin\Example.CameraCapture.exe
+D:\Dokumen\code\c#\bin\Example.CameraCapture.pdb
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\CameraCapture.CameraCapture.resources
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\CameraCapture.csproj.GenerateResource.Cache
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\Example.CameraCapture.exe.manifest
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\Example.CameraCapture.application
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\Example.CameraCapture.exe
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\Example.CameraCapture.pdb
+D:\Dokumen\code\c#\bin\Program.cs
+D:\Dokumen\code\c#\FaceRecognition\CameraCapture\obj\Debug\CameraCapture.csprojResolveAssemblyReference.cache
