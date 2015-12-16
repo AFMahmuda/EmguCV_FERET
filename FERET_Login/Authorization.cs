@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace FERET_Login
 {
@@ -41,7 +35,7 @@ namespace FERET_Login
         public static int Register(String username, String password)
         {
 
-            if (username.Equals("Username") && password.Equals("Password")) 
+            if (username.Equals("Username") && password.Equals("Password"))
                 //do nothing on default value                
                 return -1;
             else if (!Users.ContainsKey(username))

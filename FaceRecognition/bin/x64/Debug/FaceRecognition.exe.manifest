@@ -90,18 +90,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\Emgu.CV.UI.resources.dll" size="10752">
-      <assemblyIdentity name="Emgu.CV.UI.resources" version="3.0.0.2157" publicKeyToken="7281126722AB4438" language="zh-CN" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sbw6nQUWqe9BoCf2TzlRAqqt7NyDFCQrM+ysUcLByZw=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.Util.dll" size="19456">
       <assemblyIdentity name="Emgu.Util" version="3.0.0.2157" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -121,31 +109,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aKzlrdLjh3vIpQKkCpKO8Eu8muu5f5X7pV2DGshuaL8=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="307200">
-      <assemblyIdentity name="ZedGraph" version="5.1.5.28844" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RjnOyzIQbo6k2kf8/LpiqSsrvLeMZCPFaomCrufslks=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ZedGraph.resources.dll" size="4096">
-      <assemblyIdentity name="ZedGraph.resources" version="5.1.5.28844" publicKeyToken="02A83CBD123FCD60" language="zh-cn" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Piq4dc5PHiWw5OsJdaTaRmfq7SbIIsGIX1tYdMRH3PE=</dsig:DigestValue>
+        <dsig:DigestValue>PIpiemMlWy933BEf1Zjmx7PQ8ha12+OnbY37g4fnvx0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
