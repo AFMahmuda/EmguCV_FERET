@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FacialFeatureDetection.exe" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FacialFeatureDetection.exe" size="8704">
       <assemblyIdentity name="FacialFeatureDetection" version="0.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>K/DnAbgWzQDOOohM7xCnzjvmH3/b9LsiTOKyHO6nr98=</dsig:DigestValue>
+        <dsig:DigestValue>FNt4uy15anGvilCJzVwQtRExwhJ0+IxZ2OI+oVY+2fE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

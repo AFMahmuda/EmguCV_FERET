@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FaceRecognition.exe" size="17920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FaceRecognition.exe" size="17408">
       <assemblyIdentity name="FaceRecognition" version="0.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cnAUj3S4ficsOHx0wEJGY+5+3G8bNPhn3p9mQ6TiPO8=</dsig:DigestValue>
+        <dsig:DigestValue>aKzlrdLjh3vIpQKkCpKO8Eu8muu5f5X7pV2DGshuaL8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

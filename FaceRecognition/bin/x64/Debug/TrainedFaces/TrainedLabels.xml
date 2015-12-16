@@ -40,4 +40,12 @@
     <NAME>afmahmuda</NAME>
     <FILE>face_afmahmuda_150902160359.jpg</FILE>
   </FACE>
+  <FACE>
+    <NAME>Fathur</NAME>
+    <FILE>face_Fathur_151217000241.jpg</FILE>
+  </FACE>
+  <FACE>
+    <NAME>Fathur</NAME>
+    <FILE>face_Fathur_151217000255.jpg</FILE>
+  </FACE>
 </Faces_For_Training>
